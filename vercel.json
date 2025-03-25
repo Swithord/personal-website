@@ -1,0 +1,27 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/cattycomicscompany",
+        "permanent": true,
+        "has": [
+          {
+            "type": "host",
+            "value": "www.cattycomicscompany.com"
+          }
+        ]
+      },
+      {
+        "source": "/",
+        "destination": "/",
+        "permanent": true,
+        "has": [
+          {
+            "type": "host",
+            "value": "www.yorkng.com"
+          }
+        ]
+      }
+    ]
+  }
+  
