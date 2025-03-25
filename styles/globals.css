@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+  @apply mx-auto px-4;
+}
+
 @layer base {
   :root {
     --background: 88, 27%, 86%;
@@ -11,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
     --primary: 79, 67%, 21%;
-    --primary-foreground: 0 0% 98%;
+    --primary-foreground: 88, 27%, 86%;
     --secondary: 82, 34%, 68%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;

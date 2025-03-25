@@ -10,10 +10,13 @@ export default function Navbar() {
       <div className="container flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/">
-            <div className="font-bold">York Ng</div>
+            <div className="font-bold">york ng</div>
           </Link>
           <Link href="/projects"> 
-            <div className="ml-4">Projects</div>
+            <div className="ml-4">projects</div>
+          </Link>
+          <Link href="/cattycomicscompany">
+            <div className="ml-4">comics</div>
           </Link>
         </div>
       <Toggle className='h-[2rem]' onClick={() => setTheme(theme => theme === 'dark' ? 'light' : 'dark')}>
