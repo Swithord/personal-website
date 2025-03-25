@@ -4,7 +4,7 @@ import { Toggle } from "./ui/toggle"
 import { MoonIcon, SunIcon } from "lucide-react"
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, resolvedTheme } = useTheme()
   return (
     <nav className="h-[3rem] w-full p-2 bg-secondary text-foreground flex justify-center items-center">
       <div className="container flex justify-between items-center">
@@ -19,8 +19,8 @@ export default function Navbar() {
             <div className="ml-4">comics</div>
           </Link>
         </div>
-      <Toggle className='h-[2rem]' onClick={() => setTheme(theme => theme === 'dark' ? 'light' : 'dark')}>
-        {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+      <Toggle className='h-[2rem]' onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
+        {resolvedTheme === 'dark' ? <SunIcon /> : <MoonIcon />}
       </Toggle>
       </div>
     </nav>
