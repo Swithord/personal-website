@@ -11,7 +11,7 @@ import {
     PaginationPrevious,
 } from "@/components/ui/pagination"
 import { Separator } from "@/components/ui/separator";
-import { Document } from 'react-pdf';
+import { FaCat } from "react-icons/fa";
 
 interface Comic {
     title: string;
@@ -86,7 +86,7 @@ export default function CattyComicsCompany() {
             <Navbar />
             <div className='flex flex-col w-full gap-10 container grow'>
                 <div className='flex flex-col gap-1'>
-                    <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>welcome to the catty comics company!</span>
+                    <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary flex gap-2'><FaCat />welcome to the catty comics company!</span>
                     <div>
                         Catty Comics Company (CCC) was a group I founded sometime around fourth grade, which focused on drawing comics based on a fictional cat character named “Catty”. I'd recruited many of my classmates for this project, but by this point, I’d forgotten most of what happened in/with CCC. Regardless, I’ve uploaded the few CCC comics I still have for archival purposes.
                     </div>
@@ -136,7 +136,7 @@ export default function CattyComicsCompany() {
                         </div>
                         <div className='flex flex-col gap-1 w-full md:w-1/2'>
                             <span className='text-2xl text-primary font-bold underline underline-offset-4 decoration-secondary'>preview</span>
-                            {currentComic ? <iframe src={currentComic.url} className='w-full h-[50vh]'></iframe> : <div>pick a comic to view!</div>}
+                            {currentComic ? <iframe src={currentComic.url} className='w-full h-[50vh] border border-primary border-4 rounded-lg'></iframe> : <div>pick a comic to view!</div>}
                         </div>
                     </div>
             </div>
