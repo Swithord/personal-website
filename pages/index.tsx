@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className='flex flex-col bg-background text-foreground h-screen'>
       <Navbar />
-      <div className='flex flex-col w-full gap-10 items-center'>
+      <div className='flex flex-col w-full gap-10 items-center grow'>
         <div className='w-full h-[25vh] sm:h-[33vh] md:h-[50vh] overflow-hidden relative object-center'>
           <div className='absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 container'>
             <div className='flex flex-col text-white max-w-[100%] md:max-w-[50%] lg:max-w-[33%]'>
@@ -77,8 +77,8 @@ export default function Home() {
           </div>
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
