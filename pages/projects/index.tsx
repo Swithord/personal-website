@@ -13,6 +13,7 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 export default function Projects() {
   return (
@@ -26,6 +27,60 @@ export default function Projects() {
                     <span className='whitespace-nowrap'>- Ursula, Kiki's Delivery Service</span>
                     <GiCat size={25} />
                 </div>
+            </div>
+            <div className='flex flex-col gap-2'>
+                <span className='text-2xl text-primary font-bold underline underline-offset-4 decoration-secondary'>machine learning</span>
+                <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2 }}>
+                    <Masonry gutter="1rem">
+                        <Card className='border border-secondary'>
+                            <CardHeader>
+                                <CardTitle className='text-xl'>UofT Reddit Sentiment Analysis</CardTitle>
+                                <CardDescription className='text-md'>Finding the best (and worst) courses, departments and colleges at UofT. </CardDescription>
+                            </CardHeader>
+                            <CardContent className='flex flex-col gap-2'>
+                                <ul className="list-disc pl-5">
+                                    <li>Method: Topic-aware, context-aware sentiment classification using language models with Regex matching. Studied correlation with UofT course evaluation scores to measure accuracy.</li>
+                                    <li>Model: gemma-1b hosted locally with ollama</li>
+                                    <li>Dataset: 233k sentiment classifications covering 5.5k course codes, produced from 1.7 million Reddit posts & comments from UofT students</li>
+                                </ul>
+                                <div className="flex gap-2">
+                                    <Link href='https://www.reddit.com/r/UofT/comments/1l6kkbg/i_analysed_1762872_reddit_submissions_to_find_the/' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
+                                        View report
+                                        <FiExternalLink />
+                                    </Link>
+                                    <Link href='https://anonymous.4open.science/r/uoft-sentiment' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
+                                        View dataset
+                                        <IoDocumentTextOutline />
+                                    </Link>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <span><span className='font-bold'>Stack:</span> Pandas, Huggingface, Tableau</span>
+                            </CardFooter>
+                        </Card>
+                        <Card className='border border-secondary'>
+                            <CardHeader>
+                                <CardTitle className='text-xl'>CargoVision</CardTitle>
+                                <CardDescription className='text-md'>Detects Dangerous Goods shipping labels on incoming cargo shipments. <span className='italic'>Internship project for Cathay Pacific Airways.</span></CardDescription>
+                            </CardHeader>
+                            <CardContent className='flex flex-col gap-2'>
+                                <ul className="list-disc pl-5">
+                                    <li>Model: YOLOv8, finetuned </li>
+                                    <li>Dataset: custom dataset compiled from online sources & from Cathay Cargo Terminal; 760+ images, 16 object classes, 2900+ labels </li>
+                                </ul>
+                                <div className="flex gap-2">
+                                    <Link href='https://github.com/Swithord/cathaycargo' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
+                                        View on GitHub
+                                        <FiGithub />
+                                    </Link>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <span><span className='font-bold'>Stack:</span> OpenCV, Roboflow, YOLOv8 </span>
+                            </CardFooter>
+                        </Card>
+                    </Masonry>
+                </ResponsiveMasonry>
             </div>
             <div className='flex flex-col gap-2'>
                 <span className='text-2xl text-primary font-bold underline underline-offset-4 decoration-secondary'>web development</span>
@@ -124,60 +179,7 @@ export default function Projects() {
                         </Card>
                     </Masonry>
                 </ResponsiveMasonry>
-            </div>
-            <div className='flex flex-col gap-2'>
-                <span className='text-2xl text-primary font-bold underline underline-offset-4 decoration-secondary'>machine learning</span>
-                <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2 }}>
-                    <Masonry gutter="1rem">
-                        <Card className='border border-secondary'>
-                            <CardHeader>
-                                <CardTitle className='text-xl'>UofT Reddit Sentiment Analysis</CardTitle>
-                                <CardDescription className='text-md'>Finding the best (and worst) courses, departments and colleges at UofT. </CardDescription>
-                            </CardHeader>
-                            <CardContent className='flex flex-col gap-2'>
-                                <ul className="list-disc pl-5">
-                                    <li>Model: BERT-based multi-class text classifier model for sentiment analysis</li>
-                                    <li>Dataset: 1.4 million Reddit posts & comments from UofT students</li>
-                                </ul>
-                                <div className="flex gap-2">
-                                    <Link href='https://www.reddit.com/r/UofT/comments/15a7mpa/i_analysed_14_million_ruoft_posts_to_find_the/' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
-                                        View published report
-                                        <FiExternalLink />
-                                    </Link>
-                                    <Link href='https://github.com/Swithord/uoft-subreddit-sentiment-analysis' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
-                                        View on GitHub
-                                        <FiGithub />
-                                    </Link>
-                                </div>
-                            </CardContent>
-                            <CardFooter>
-                                <span><span className='font-bold'>Stack:</span> Pandas, Huggingface, Tableau</span>
-                            </CardFooter>
-                        </Card>
-                        <Card className='border border-secondary'>
-                            <CardHeader>
-                                <CardTitle className='text-xl'>CargoVision</CardTitle>
-                                <CardDescription className='text-md'>Detects Dangerous Goods shipping labels on incoming cargo shipments. <span className='italic'>Internship project for Cathay Pacific Airways.</span></CardDescription>
-                            </CardHeader>
-                            <CardContent className='flex flex-col gap-2'>
-                                <ul className="list-disc pl-5">
-                                    <li>Model: YOLOv8, finetuned </li>
-                                    <li>Dataset: custom dataset compiled from online sources & from Cathay Cargo Terminal; 760+ images, 16 object classes, 2900+ labels </li>
-                                </ul>
-                                <div className="flex gap-2">
-                                    <Link href='https://github.com/Swithord/cathaycargo' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
-                                        View on GitHub
-                                        <FiGithub />
-                                    </Link>
-                                </div>
-                            </CardContent>
-                            <CardFooter>
-                                <span><span className='font-bold'>Stack:</span> OpenCV, Roboflow, YOLOv8 </span>
-                            </CardFooter>
-                        </Card>
-                    </Masonry>
-                </ResponsiveMasonry>
-            </div>
+            </div> 
         </div>
         <Footer />
     </div>
