@@ -180,6 +180,71 @@ export default function Projects() {
                     </Masonry>
                 </ResponsiveMasonry>
             </div> 
+            <div className='flex flex-col gap-2'>
+                <span className='text-2xl text-primary font-bold underline underline-offset-4 decoration-secondary'>misc</span>
+                <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2 }}>
+                    <Masonry gutter="1rem">
+                        <Card className='border border-secondary'>
+                            <CardHeader>
+                                <CardTitle className='text-xl'>Ranked Choice Voting</CardTitle>
+                                <CardDescription className='text-md'>Python implementation of RCV (a.k.a. single transferable vote): a fairer, more representative voting system.</CardDescription>
+                            </CardHeader>
+                            <CardContent className='flex flex-col gap-2'>
+                                <div className="flex gap-2">
+                                    <Link href='https://github.com/Swithord/ranked-choice-voting' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
+                                        View on GitHub
+                                        <FiGithub />
+                                    </Link>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <span><span className='font-bold'>Stack:</span> Python, clean code.</span>
+                            </CardFooter>
+                        </Card>
+                        <Card className='border border-secondary'>
+                            <CardHeader>
+                                <CardTitle className='text-xl'>Hinton Number</CardTitle>
+                                <CardDescription className='text-md'>Ever heard of the Erdos Number? This is that, but measuring authorship distance from Geoffrey Hinton.</CardDescription>
+                            </CardHeader>
+                            <CardContent className='flex flex-col gap-2'>
+                                <ul className="list-disc pl-5">
+                                    <li>Dataset: authorship graph from DBLP</li>
+                                </ul>
+                                <div className="flex gap-2">
+                                    <Link href='https://github.com/Swithord/hintonnumber' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
+                                        View on GitHub
+                                        <FiGithub />
+                                    </Link>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <span><span className='font-bold'>Stack:</span> Python, networkx</span>
+                            </CardFooter>
+                        </Card>
+                        <Card className='border border-secondary'>
+                            <CardHeader>
+                                <CardTitle className='text-xl'>Hong Kong Protest Visualisation</CardTitle>
+                                <CardDescription className='text-md'>Day-by-day geographical visualisation of events and munitions fired by police during the 2019 Hong Kong Anti-Extradition Protests.</CardDescription>
+                            </CardHeader>
+                            <CardContent className='flex flex-col gap-2'>
+                                <ul className="list-disc pl-5">
+                                    <li>Dataset: shapefiles of Hong Kong districts, police munitions, and protest events</li>
+                                    <li>Visualisation: day-by-day plot of events, and aggregated statistics of police munitions used</li>
+                                </ul>
+                                <div className="flex gap-2">
+                                    <Link href='https://github.com/Swithord/hong-kong-protest-visualisation' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
+                                        View on GitHub
+                                        <FiGithub />
+                                    </Link>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <span><span className='font-bold'>Stack:</span> Python, geopandas, matplotlib</span>
+                            </CardFooter>
+                        </Card>
+                        </Masonry>
+                </ResponsiveMasonry>
+                </div>
         </div>
         <Footer />
     </div>
