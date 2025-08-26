@@ -39,6 +39,9 @@ export default function Navbar() {
           <Link href="/projects"> 
             <div className="ml-4">projects</div>
           </Link>
+          <Link href='/publications'>
+            <div className="ml-4">publications</div>
+          </Link>
             <DropdownMenu onOpenChange={(open) => setIsOpen(open)}>
             <DropdownMenuTrigger className="ml-4 flex gap-2 items-center">
             
