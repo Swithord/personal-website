@@ -27,11 +27,43 @@ export default function Projects() {
                     <span className='whitespace-nowrap'>- Ursula, Kiki's Delivery Service</span>
                     <GiCat size={25} />
                 </div>
+                <div className='flex gap-5'>
+                    <Link href='https://github.com/swithord' className='underline flex items-center gap-1 text-primary' target='_blank' rel='noopener noreferrer'>
+                        <FiGithub size={20} />
+                        GitHub
+                    </Link>
+                    <Link href='https://huggingface.co/swithord' className='underline flex items-center gap-1 text-primary' target='_blank' rel='noopener noreferrer'>
+                        <FiExternalLink size={20} />
+                        Hugging Face
+                    </Link>
+                </div>
             </div>
             <div className='flex flex-col gap-2'>
                 <span className='text-2xl text-primary font-bold underline underline-offset-4 decoration-secondary'>machine learning</span>
                 <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2 }}>
                     <Masonry gutter="1rem">
+                        <Card className='border border-secondary'>
+                            <CardHeader>
+                                <CardTitle className='text-xl'>Nebula Classification</CardTitle>
+                                <CardDescription className='text-md'>A testing ground for applying computer vision models to astronomical data.</CardDescription>
+                            </CardHeader>
+                            <CardContent className='flex flex-col gap-2'>
+                                <ul className="list-disc pl-5">
+                                    <li>(Work in progress)</li>
+                                    <li>Image processing: Gaussian blurring, Asinh stretching on images from the Digital Sky Survey (DSS)</li>
+                                    <li>Model: currently investigating VAEs for image denoising, and potentially learning latent representations for classification.</li>
+                                </ul>
+                                <div className="flex gap-2">
+                                    <Link href='https://github.com/Swithord/astro-cv' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
+                                        View repository
+                                        <FiGithub />
+                                    </Link>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <span><span className='font-bold'>Stack:</span> PyTorch, AstroPy</span>
+                            </CardFooter>
+                        </Card>
                         <Card className='border border-secondary'>
                             <CardHeader>
                                 <CardTitle className='text-xl'>UofT Reddit Sentiment Analysis</CardTitle>
@@ -55,7 +87,7 @@ export default function Projects() {
                                 </div>
                             </CardContent>
                             <CardFooter>
-                                <span><span className='font-bold'>Stack:</span> Pandas, Huggingface, Tableau</span>
+                                <span><span className='font-bold'>Stack:</span> Huggingface, Pandas</span>
                             </CardFooter>
                         </Card>
                         <Card className='border border-secondary'>
@@ -114,6 +146,31 @@ export default function Projects() {
                         </Card>
                         <Card className='border border-secondary'>
                             <CardHeader>
+                                <CardTitle className='text-xl'>ASX</CardTitle>
+                                <CardDescription className='text-md'>Website for UofT's astronomy club for events postings.</CardDescription>
+                            </CardHeader>
+                            <CardContent className='flex flex-col gap-2'>
+                                <ul className="list-disc pl-5">
+                                    <li>News feature: Provide updates on club events with an AWS API Gateway, implemented with Lambda functions, DynamoDB and S3 for images.</li>
+                                    <li>The UI looks pretty cool, imo.</li>
+                                </ul>
+                                <div className="flex gap-2">
+                                    <Link href='https://www.utasx.ca' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
+                                        View deployment
+                                        <FiExternalLink />
+                                    </Link>
+                                    <Link href='https://github.com/Swithord/asx-2' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
+                                        View on GitHub
+                                        <FiGithub />
+                                    </Link>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <span><span className='font-bold'>Stack:</span> Next.js, React, TailwindCSS, Typescript</span>
+                            </CardFooter>
+                        </Card>
+                        <Card className='border border-secondary'>
+                            <CardHeader>
                                 <CardTitle className='text-xl'>TTCTracker</CardTitle>
                                 <CardDescription className='text-md'>Predicts public transit vehicle arrival times. <span className='italic'>Course project for CSC207.</span></CardDescription>
                             </CardHeader>
@@ -131,30 +188,6 @@ export default function Projects() {
                             </CardContent>
                             <CardFooter>
                                 <span><span className='font-bold'>Stack:</span> Java, Spring Boot, React</span>
-                            </CardFooter>
-                        </Card>
-                        <Card className='border border-secondary'>
-                            <CardHeader>
-                                <CardTitle className='text-xl'>ASX</CardTitle>
-                                <CardDescription className='text-md'>Website for UofT's astronomy club for events postings.</CardDescription>
-                            </CardHeader>
-                            <CardContent className='flex flex-col gap-2'>
-                                <ul className="list-disc pl-5">
-                                    <li>Work in progress</li>
-                                </ul>
-                                <div className="flex gap-2">
-                                    <Link href='https://www.utasx.ca' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
-                                        View deployment
-                                        <FiExternalLink />
-                                    </Link>
-                                    <Link href='https://github.com/Swithord/asx' target='_blank' className='flex gap-2 items-center w-fit bg-primary px-3 py-1 rounded-lg text-background'>
-                                        View on GitHub
-                                        <FiGithub />
-                                    </Link>
-                                </div>
-                            </CardContent>
-                            <CardFooter>
-                                <span><span className='font-bold'>Stack:</span> Next.js, React, TailwindCSS, Typescript</span>
                             </CardFooter>
                         </Card>
                         <Card className='border border-secondary'>

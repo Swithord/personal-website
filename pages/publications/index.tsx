@@ -22,31 +22,62 @@ export default function Publications() {
         <div className='flex flex-col w-full gap-10 container grow'>
             <div className='flex flex-col gap-3'>
                 <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>publications</span>
-                <div className='flex gap-2 flex-wrap text-lg items-center'>
-                    <ul>
+                <ul className='flex gap-5 flex-wrap text-lg items-center'>
                         <li>
                             <div className='flex flex-col'>
-                                <span className='font-bold'>Less is More: The Effectiveness of Compact Language Typological Representations</span>
+                                <span className='font-bold'>Less is More: The Effectiveness of Compact Typological Language Representations</span>
                                 <span><span className='font-bold'>York Hay Ng</span>, Fiona Hoang, En-Shiun Annie Lee</span>
-                                <span className='text-muted-foreground'>In 2025 Conference on  Empirical Methods in Natural Language Processing (EMNLP) (Main Conference, Short Paper)</span>
+                                <span className='text-muted-foreground'>In 2025 Conference on  Empirical Methods in Natural Language Processing (EMNLP) (Main Conference)</span>
+                                <div className='flex gap-2 mt-2'>
+                                    <Link href="https://arxiv.org/abs/2509.20129" target="_blank">
+                                        <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
+                                            <IoDocumentTextOutline />
+                                            <span className='text-lg'>ArXiv</span>
+                                        </Button>
+                                    </Link>
+                                </div>
                             </div>
                         </li>
                     </ul>
-                </div>
             </div>
             <div className='flex flex-col gap-3'>
                     <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>manuscripts under review</span>
-                    <div className='flex gap-2 flex-wrap text-lg items-center'>
-                        <ul>
+                    <ul className='flex gap-5 flex-wrap text-lg items-center'>
                             <li>
                                 <div className='flex flex-col'>
-                                    <span className='font-bold'>Transfer Learning from Mandarin for Sinitic Natural Language Understanding</span>
-                                    <span>Junghyun Min, <span className='font-bold'>York Hay Ng</span>, En-Shiun Annie Lee</span>
-                                    <span className='text-muted-foreground'>Extended abstract, under review.</span>
+                                    <span className='font-bold'>Modality Matching Matters: Calibrating Language Distances for Cross-Lingual Transfer in URIEL+</span>
+                                    <span><span className='font-bold'>York Hay Ng*</span>, Aditya Khan*, James Lu*, Matteo Salloum, Michael Zhou, Fiona Hoang, A. Seza Doğruöz, En-Shiun Annie Lee</span>
+                                    <div className='flex gap-2 mt-2'>
+                                    <Link href="https://arxiv.org/abs/2510.19217" target="_blank">
+                                        <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
+                                            <IoDocumentTextOutline />
+                                            <span className='text-lg'>ArXiv</span>
+                                        </Button>
+                                    </Link>
+                                </div>
                                 </div>
                             </li>
-                        </ul>
-                    </div>
+                            <li>
+                                <div className='flex flex-col'>
+                                    <span className='font-bold'>CantoNLU: A benchmark for Cantonese natural language understanding</span>
+                                    <span>Junghyun Min, <span className='font-bold'>York Hay Ng</span>, Sophia Chan, Helena Zhao, En-Shiun Annie Lee</span>
+                                    <div className='flex gap-2 mt-2'>
+                                    <Link href="https://arxiv.org/abs/2510.20670" target="_blank">
+                                        <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
+                                            <IoDocumentTextOutline />
+                                            <span className='text-lg'>ArXiv</span>
+                                        </Button>
+                                    </Link>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className='flex flex-col'>
+                                    <span className='font-bold'>Simple Additions, Substantial Gains: Expanding Scripts, Languages, and Lineage Coverage in URIEL+</span>
+                                    <span>Mason Shipton, Aditya Khan, <span className='font-bold'>York Hay Ng</span>, James Lu, Fiona Hoang, A. Seza Doğruöz, En-Shiun Annie Lee</span>
+                                </div>
+                            </li>
+                    </ul>
                 </div>
         </div>
         <Footer />
