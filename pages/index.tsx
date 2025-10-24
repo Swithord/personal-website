@@ -49,13 +49,13 @@ export default function Home() {
                 <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
                   <span className='font-bold whitespace-nowrap'>what i do:</span>
                   <span>
-                    i'm a third-year computer science student <span className='text-sm'>(minoring in economics)</span> at the university of toronto, and an undergraduate researcher at the
+                    i'm a fourth-year computer science student <span className='text-sm'>(minoring in economics)</span> at the university of toronto, and an undergraduate researcher at the
                     <HoverCard>
                       <HoverCardTrigger>
                         <span> <span className='bg-secondary p-1 rounded'>lee language lab</span></span>
                       </HoverCardTrigger>
                       <HoverCardContent className='bg-secondary border border-primary'>
-                        <span>we focus on multilingual nlp with a focus on lesser-resourced languages. supervised by Dr. Annie Lee.</span>
+                        <span>we focus on multilingual nlp & cross-lingual transfer with a focus on lesser-resourced languages. supervised by Prof. Annie Lee.</span>
                       </HoverCardContent>
                     </HoverCard>
                     .
@@ -92,7 +92,7 @@ export default function Home() {
             <li className='flex gap-5 rounded-lg items-center'>
               <span className="font-bold text-lg whitespace-nowrap">sept 2025:</span>
               <div className='text-lg'>
-                my latest paper,<span> </span>
+                my first paper,<span> </span>
                 <Link href="https://arxiv.org/abs/2509.20129" target="_blank" className='underline font-bold text-primary'>"Less is More: The Effectiveness of Compact Typological Language Representations"</Link>
                 <span>, has been accepted to EMNLP 2025 Main Conference!</span>
               </div>
