@@ -25,6 +25,11 @@ export default function Home() {
               <span className='text-lg'>welcome to my corner of the internet.</span>
             </div>
           </div>
+          <div className='absolute bottom-5 right-5 z-20'>
+            <div className='flex flex-col text-white items-end'>
+              <span className='text-lg'>chilliwack, bc</span>
+            </div>
+          </div>
           <div className='absolute inset-0 bg-black opacity-60 z-10'></div>
           <Image
             src='/herobanner.jpg'
@@ -38,37 +43,44 @@ export default function Home() {
             <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>about me</span>
             <div className='relative'>
               <Image
-                src="/profile.png"
+                src="/profile.JPG"
                 alt="Profile picture"
                 width={150}
                 height={150}
-                className="rounded-full border-4 border-secondary shadow-lg object-cover float-right ml-4 mb-2"
+                className="rounded-full border-4 border-secondary shadow-lg object-cover float-right ml-4 mb-2 w-24 h-24 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px]"
                 priority
               />
               <div className='flex flex-col gap-3'>
                 <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
-                  <span className='font-bold whitespace-nowrap'>what i do:</span>
+                  <span className='font-bold whitespace-nowrap'>what I do:</span>
                   <span>
-                    i'm a fourth-year computer science student <span className='text-sm'>(minoring in economics)</span> at the university of toronto, and an undergraduate researcher at the
+                    I'm a fourth-year computer science student <span className='text-sm'>(minoring in economics)</span> at the University of Toronto, as well as an undergraduate researcher at the
                     <HoverCard>
                       <HoverCardTrigger>
                         <span> <span className='bg-secondary p-1 rounded'>lee language lab</span></span>
                       </HoverCardTrigger>
                       <HoverCardContent className='bg-secondary border border-primary'>
-                        <span>we focus on multilingual nlp & cross-lingual transfer with a focus on lesser-resourced languages. supervised by Prof. Annie Lee.</span>
+                        <span>we focus on multilingual nlp & cross-lingual transfer with a focus on lesser-resourced languages.</span>
                       </HoverCardContent>
                     </HoverCard>
-                    .
+                    <span> </span>(supervised by Prof. Annie Lee) and the social reading technology group (supervised by Prof. Gerald Penn).
                   </span>
                 </div>
                 <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
-                  <span className='font-bold whitespace-nowrap'>my interests:</span>
-                  <span>natural language processing, software development, machine learning, building cool things that matter.</span>
+                  <span className='font-bold whitespace-nowrap'>my research interests:</span>
+                  <span>multilinguality in natural language processing, LLM biases, human-AI interaction.</span>
                 </div>
                 <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
                   <span className='font-bold whitespace-nowrap'>outside of school:</span>
                   <span>
-                    i'm the vice president at <Link href='https://www.utasx.ca' className='underline font-bold text-primary'>uoft's astronomy club</Link>, i help out with the computer science student union & i mentor at its research mentorship program. i like playing flight simulators and listening to
+                    I'm the vice president at <Link href='https://www.utasx.ca' className='underline font-bold text-primary'>uoft's astronomy club</Link>. I help out with the computer science student union & I mentor at its research mentorship program. I like cooking/baking, <HoverCard>
+                      <HoverCardTrigger>
+                        <span> </span><span className='bg-secondary p-1 rounded'>specialty coffee</span>
+                      </HoverCardTrigger>
+                      <HoverCardContent className='bg-secondary border border-primary'>
+                        <span>i'm a volunteer barista at cafe059 - the architecture building cafe!</span>
+                      </HoverCardContent>
+                    </HoverCard>, board games and
                     <HoverCard>
                       <HoverCardTrigger>
                         <span> </span><span className='bg-secondary p-1 rounded'>classical music.</span>
@@ -88,7 +100,13 @@ export default function Home() {
           </div>
           <div className='flex flex-col gap-5'>
             <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>latest</span>
-            <ul>
+            <ul className='flex flex-col gap-5'>
+              <li className='flex gap-5 rounded-lg items-center'>
+              <span className="font-bold text-lg whitespace-nowrap">feb 2026:</span>
+              <div className='text-lg'>
+                two more papers on language distances accepted to EACL SRW and LREC 2026!
+              </div>
+            </li>
             <li className='flex gap-5 rounded-lg items-center'>
               <span className="font-bold text-lg whitespace-nowrap">sept 2025:</span>
               <div className='text-lg'>

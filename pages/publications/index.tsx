@@ -27,26 +27,22 @@ export default function Publications() {
                             <div className='flex flex-col'>
                                 <span className='font-bold'>Less is More: The Effectiveness of Compact Typological Language Representations</span>
                                 <span><span className='font-bold'>York Hay Ng</span>, Fiona Hoang, En-Shiun Annie Lee</span>
-                                <span className='text-muted-foreground'>In 2025 Conference on  Empirical Methods in Natural Language Processing (EMNLP) (Main Conference)</span>
+                                <span className='text-muted-foreground'>In EMNLP 2025</span>
                                 <div className='flex gap-2'>
-                                    <Link href="https://arxiv.org/abs/2509.20129" target="_blank">
+                                    <Link href="https://aclanthology.org/2025.emnlp-main.1310/" target="_blank">
                                         <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
                                             <IoDocumentTextOutline />
-                                            <span className='text-lg'>ArXiv</span>
+                                            <span className='text-lg'>ACL Anthology</span>
                                         </Button>
                                     </Link>
                                 </div>
                             </div>
                         </li>
-                    </ul>
-            </div>
-            <div className='flex flex-col gap-3'>
-                    <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>manuscripts under review</span>
-                    <ul className='flex gap-5 flex-wrap text-lg items-center'>
-                            <li>
+                        <li>
                                 <div className='flex flex-col'>
                                     <span className='font-bold'>Modality Matching Matters: Calibrating Language Distances for Cross-Lingual Transfer in URIEL+</span>
                                     <span><span className='font-bold'>York Hay Ng*</span>, Aditya Khan*, James Lu*, Matteo Salloum, Michael Zhou, Fiona Hoang, A. Seza Doğruöz, En-Shiun Annie Lee</span>
+                                    <span className='text-muted-foreground'>To appear in EACL 2026 SRW</span>
                                     <div className='flex gap-2'>
                                     <Link href="https://arxiv.org/abs/2510.19217" target="_blank">
                                         <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
@@ -57,6 +53,34 @@ export default function Publications() {
                                 </div>
                                 </div>
                             </li>
+                            <li>
+                                <div className='flex flex-col'>
+                                    <span className='font-bold'>Simple Additions, Substantial Gains: Expanding Scripts, Languages, and Lineage Coverage in URIEL+</span>
+                                    <span>Mason Shipton, <span className='font-bold'>York Hay Ng</span>, Aditya Khan, Fiona Hoang, James Lu, A. Seza Doğruöz, En-Shiun Annie Lee</span>
+                                    <span className='text-muted-foreground'>To appear in LREC 2026</span>
+                                    <div className='flex gap-2'>
+                                    <Link href="https://arxiv.org/abs/2510.27183" target="_blank">
+                                        <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
+                                            <IoDocumentTextOutline />
+                                            <span className='text-lg'>ArXiv</span>
+                                        </Button>
+                                    </Link>
+                                </div>
+                                </div>
+                            </li>
+                        <li>
+                                <div className='flex flex-col'>
+                                    <span className='font-bold'>SiniticMTError: A Machine Translation Dataset with Error Annotations for Sinitic Languages</span>
+                                    <span>Hannah Liu, Junghyun Min, En-Shiun Annie Lee, Ethan Yue Heng Cheung, Shou-Yi Hung, Elsie Chan, Shiyao Qian, Runtong Liang, Kimlan Huynh, Wing Yu Yip, <span className='font-bold'>York Hay Ng</span>, Tsz Fung Yau, Ka Ieng Charlotte Lo, You-Wei Wu and Richard Tzong-Han Tsai</span>
+                                    <span className='text-muted-foreground'>To appear in LREC 2026</span>
+                                </div>
+                            </li>
+                            
+                    </ul>
+            </div>
+            <div className='flex flex-col gap-3'>
+                    <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>preprints</span>
+                    <ul className='flex flex-col gap-5 text-lg'>
                             <li>
                                 <div className='flex flex-col'>
                                     <span className='font-bold'>CantoNLU: A benchmark for Cantonese natural language understanding</span>
@@ -72,17 +96,10 @@ export default function Publications() {
                                 </div>
                             </li>
                             <li>
-                                <div className='flex flex-col'>
-                                    <span className='font-bold'>Simple Additions, Substantial Gains: Expanding Scripts, Languages, and Lineage Coverage in URIEL+</span>
-                                    <span>Mason Shipton, <span className='font-bold'>York Hay Ng</span>, Aditya Khan, Fiona Hoang, James Lu, A. Seza Doğruöz, En-Shiun Annie Lee</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className='flex flex-col'>
-                                    <span className='font-bold'>SiniticMTError: A Machine Translation Dataset with Error Annotations for Sinitic Languages</span>
-                                    <span>Hannah Liu, Junghyun Min, En-Shiun Annie Lee, Ethan Yue Heng Cheung, Shou-Yi Hung, Elsie Chan, Shiyao Qian, Runtong Liang, Kimlan Huynh, Wing Yu Yip, <span className='font-bold'>York Hay Ng</span>, Tsz Fung Yau, Ka Ieng Charlotte Lo, You-Wei Wu and Richard Tzong-Han Tsai</span>
-                                </div>
-                            </li>
+                            <div className='flex flex-col'>
+                                <span>and more to come... 👀</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
         </div>
