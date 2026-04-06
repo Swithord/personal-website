@@ -27,7 +27,7 @@ export default function Publications() {
                             <div className='flex flex-col'>
                                 <span className='font-bold'>Less is More: The Effectiveness of Compact Typological Language Representations</span>
                                 <span><span className='font-bold'>York Hay Ng</span>, Fiona Hoang, En-Shiun Annie Lee</span>
-                                <span className='text-muted-foreground'>In EMNLP 2025</span>
+                                <span className='text-muted-foreground'>EMNLP 2025 (Poster)</span>
                                 <div className='flex gap-2'>
                                     <Link href="https://aclanthology.org/2025.emnlp-main.1310/" target="_blank">
                                         <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
@@ -42,12 +42,12 @@ export default function Publications() {
                                 <div className='flex flex-col'>
                                     <span className='font-bold'>Modality Matching Matters: Calibrating Language Distances for Cross-Lingual Transfer in URIEL+</span>
                                     <span><span className='font-bold'>York Hay Ng*</span>, Aditya Khan*, James Lu*, Matteo Salloum, Michael Zhou, Fiona Hoang, A. Seza Doğruöz, En-Shiun Annie Lee</span>
-                                    <span className='text-muted-foreground'>To appear in EACL 2026 SRW</span>
+                                    <span className='text-muted-foreground'>EACL 2026 SRW (Oral & Poster). Outstanding Paper.</span>
                                     <div className='flex gap-2'>
-                                    <Link href="https://arxiv.org/abs/2510.19217" target="_blank">
+                                    <Link href="https://aclanthology.org/2026.eacl-srw.8" target="_blank">
                                         <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
                                             <IoDocumentTextOutline />
-                                            <span className='text-lg'>ArXiv</span>
+                                            <span className='text-lg'>ACL Anthology</span>
                                         </Button>
                                     </Link>
                                 </div>
