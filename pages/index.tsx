@@ -20,7 +20,15 @@ type NewsItem = {
 
 const news: NewsItem[] = [
   {
-    date: "march 2026",
+    date: "apr 2026",
+    content: (
+      <>
+      I will be starting my masters in computer science at McGill University this fall! I'm excited to be joining Prof. Jackie Cheung's lab at the Mila Institute and to be working on LLM evaluation.
+      </>
+    )
+  },
+  {
+    date: "mar 2026",
     content: (
       <>
         I presented our latest paper on language distances,{" "}
