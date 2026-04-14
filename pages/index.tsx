@@ -23,7 +23,9 @@ const news: NewsItem[] = [
     date: "apr 2026",
     content: (
       <>
-      I will be starting my masters in computer science at McGill University this fall! I'm excited to be joining Prof. Jackie Cheung's lab at the Mila Institute and to be working on LLM evaluation.
+      I'm headed off to McGill University for grad school! I'm excited to be joining 
+      Prof. Jackie Cheung's
+      lab at the Mila Institute and to be working on LLM evaluation.
       </>
     )
   },
