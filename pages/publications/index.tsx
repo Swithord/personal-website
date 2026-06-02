@@ -56,13 +56,13 @@ export default function Publications() {
                             <li>
                                 <div className='flex flex-col'>
                                     <span className='font-bold'>Dynamic Meta-Metrics: Source-Sentence Conditioned Weighting for MT Evaluation</span>
-                                    <span>Luke Zhang, Justin Vasselli, Aditya Khan, <span className='font-bold'>York Hay Ng</span></span>
+                                    <span>Luke Zhang, Justin Vasselli, Aditya Khan, <span className='font-bold'>York Hay Ng</span>, En-Shiun Annie Lee</span>
                                     <span className='text-muted-foreground'>To appear in ACL 2026 SRW.</span>
                                     <div className='flex gap-2'>
                                         <Link href="https://arxiv.org/abs/2605.09098" target="_blank">
                                             <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
                                                 <IoDocumentTextOutline />
-                                                <span className='text-lg'>ArXiV</span>
+                                                <span className='text-lg'>arXiv</span>
                                             </Button>
                                         </Link>
                                     </div>
