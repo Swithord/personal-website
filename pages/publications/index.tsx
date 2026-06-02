@@ -42,7 +42,7 @@ export default function Publications() {
                                 <div className='flex flex-col'>
                                     <span className='font-bold'>Modality Matching Matters: Calibrating Language Distances for Cross-Lingual Transfer in URIEL+</span>
                                     <span><span className='font-bold'>York Hay Ng*</span>, Aditya Khan*, James Lu*, Matteo Salloum, Michael Zhou, Fiona Hoang, A. Seza Doğruöz, En-Shiun Annie Lee</span>
-                                    <span className='text-muted-foreground'>EACL 2026 SRW (Oral & Poster). Outstanding Paper.</span>
+                                    <span className='text-muted-foreground'>EACL 2026 SRW (Oral & Poster) and SIGTYP (Oral, non-archival). Outstanding Paper.</span>
                                     <div className='flex gap-2'>
                                     <Link href="https://aclanthology.org/2026.eacl-srw.8" target="_blank">
                                         <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
@@ -55,24 +55,47 @@ export default function Publications() {
                             </li>
                             <li>
                                 <div className='flex flex-col'>
+                                    <span className='font-bold'>Dynamic Meta-Metrics: Source-Sentence Conditioned Weighting for MT Evaluation</span>
+                                    <span>Luke Zhang, Justin Vasselli, Aditya Khan, <span className='font-bold'>York Hay Ng</span></span>
+                                    <span className='text-muted-foreground'>To appear in ACL 2026 SRW.</span>
+                                    <div className='flex gap-2'>
+                                        <Link href="https://arxiv.org/abs/2605.09098" target="_blank">
+                                            <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
+                                                <IoDocumentTextOutline />
+                                                <span className='text-lg'>ArXiV</span>
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className='flex flex-col'>
                                     <span className='font-bold'>Simple Additions, Substantial Gains: Expanding Scripts, Languages, and Lineage Coverage in URIEL+</span>
                                     <span>Mason Shipton, <span className='font-bold'>York Hay Ng</span>, Aditya Khan, Fiona Hoang, James Lu, A. Seza Doğruöz, En-Shiun Annie Lee</span>
-                                    <span className='text-muted-foreground'>To appear in LREC 2026</span>
+                                    <span className='text-muted-foreground'>LREC 2026</span>
                                     <div className='flex gap-2'>
-                                    <Link href="https://arxiv.org/abs/2510.27183" target="_blank">
+                                    <Link href="https://lrec.elra.info/lrec2026-main-863" target="_blank">
                                         <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
                                             <IoDocumentTextOutline />
-                                            <span className='text-lg'>ArXiv</span>
+                                            <span className='text-lg'>ELRA</span>
                                         </Button>
                                     </Link>
                                 </div>
                                 </div>
                             </li>
-                        <li>
+                            <li>
                                 <div className='flex flex-col'>
                                     <span className='font-bold'>SiniticMTError: A Machine Translation Dataset with Error Annotations for Sinitic Languages</span>
                                     <span>Hannah Liu, Junghyun Min, En-Shiun Annie Lee, Ethan Yue Heng Cheung, Shou-Yi Hung, Elsie Chan, Shiyao Qian, Runtong Liang, Kimlan Huynh, Wing Yu Yip, <span className='font-bold'>York Hay Ng</span>, Tsz Fung Yau, Ka Ieng Charlotte Lo, You-Wei Wu and Richard Tzong-Han Tsai</span>
-                                    <span className='text-muted-foreground'>To appear in LREC 2026</span>
+                                    <span className='text-muted-foreground'>LREC 2026</span>
+                                    <div className='flex gap-2'>
+                                        <Link href="https://lrec.elra.info/lrec2026-main-683" target="_blank">
+                                            <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
+                                                <IoDocumentTextOutline />
+                                                <span className='text-lg'>ELRA</span>
+                                            </Button>
+                                        </Link>
+                                    </div>
                                 </div>
                             </li>
                             
