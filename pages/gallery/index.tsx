@@ -73,7 +73,7 @@ export default function Gallery() {
                                     <div key={index} className='flex flex-col gap-1'>
                                         <Image
                                             src={image.src}
-                                            alt={image.caption}
+                                            alt={image.caption ?? image.src}
                                             width={600}
                                             height={400}
                                             className='rounded-lg w-full h-auto'
