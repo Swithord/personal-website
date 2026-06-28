@@ -52,6 +52,9 @@ export default function Navbar() {
               <DropdownMenuItem asChild>
               <Link href="/cattycomicscompany">comics</Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+              <Link href="/gallery">gallery</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
             </DropdownMenu>
         </div>
