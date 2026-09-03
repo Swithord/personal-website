@@ -20,12 +20,18 @@ type NewsItem = {
 
 const news: NewsItem[] = [
   {
-    date: "apr 2026",
+    date: "sep 2026",
     content: (
       <>
-      I'm headed off to McGill University for grad school! I'm excited to be joining 
-      Prof. Jackie Cheung's
-      lab at the Mila Institute and to be working on LLM evaluation.
+        I'm starting my masters at McGill University!
+      </>
+    )
+  },
+  {
+    date: "aug 2026",
+    content: (
+      <>
+        our paper, "Typological Feature Prediction with Large Language Models: An In-Context Learning Approach", has been accepted to EMNLP 2026 Main Conference!
       </>
     )
   },
@@ -79,17 +85,24 @@ export default function Home() {
               <span className='text-lg'>welcome to my corner of the internet.</span>
             </div>
           </div>
-          <div className='absolute bottom-0 md:bottom-5 right-5 z-20'>
+          <div className='absolute bottom-0 md:bottom-5 left-0 right-0 container flex justify-end z-20'>
             <div className='flex flex-col text-white items-end'>
-              <span className='text-lg'>chilliwack, bc</span>
+              <span className='text-lg dark:hidden'>chilliwack, bc</span>
+              <span className='text-lg hidden dark:block'>okinawa, japan</span>
             </div>
           </div>
-          <div className='absolute inset-0 bg-black opacity-60 z-10'></div>
+          <div className='absolute inset-0 bg-black opacity-40 z-10'></div>
           <Image
             src='/herobanner.jpg'
             alt='Hero Banner'
             fill={true}
-            style={{ objectFit: 'cover', objectPosition: 'center center' }}
+            className='object-cover object-center dark:hidden'
+          />
+          <Image
+            src='/herobanner-dark.jpg'
+            alt='Hero Banner'
+            fill={true}
+            className='hidden object-cover object-[center_57%] dark:block'
           />
         </div>
         <div className='container flex flex-col gap-10'>
@@ -97,65 +110,71 @@ export default function Home() {
             <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>about me</span>
             <div className='relative'>
               <Image
-              src="/profile.JPG"
-              alt="Profile picture"
-              width={150}
-              height={150}
-              className="rounded-full border-4 border-secondary shadow-lg object-cover float-right ml-4 mb-2 w-24 h-24 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px] dark:hidden"
-              priority
+                src="/profile.JPG"
+                alt="Profile picture"
+                width={150}
+                height={150}
+                className="rounded-full border-4 border-secondary shadow-lg object-cover float-right ml-4 mb-2 w-24 h-24 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px] dark:hidden"
+                priority
               />
               <Image
-              src="/profile-dark.png"
-              alt="Profile picture"
-              width={150}
-              height={150}
-              className="rounded-full border-4 border-secondary shadow-lg object-cover float-right ml-4 mb-2 w-24 h-24 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px] hidden dark:block"
-              priority
+                src="/profile-dark.png"
+                alt="Profile picture"
+                width={150}
+                height={150}
+                className="rounded-full border-4 border-secondary shadow-lg object-cover float-right ml-4 mb-2 w-24 h-24 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px] hidden dark:block"
+                priority
               />
               <div className='flex flex-col gap-3'>
-              <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
-                <span className='font-bold whitespace-nowrap'>what I do:</span>
-                <span>
-                I'm a fourth-year computer science student <span className='text-sm'>(minoring in economics)</span> at the University of Toronto, as well as an undergraduate researcher at the
-                <HoverCard>
-                  <HoverCardTrigger>
-                  <span> <span className='bg-secondary p-1 rounded'>lee language lab</span></span>
-                  </HoverCardTrigger>
-                  <HoverCardContent className='bg-secondary border border-primary'>
-                  <span>we focus on multilingual nlp & cross-lingual transfer with a focus on lesser-resourced languages.</span>
-                  </HoverCardContent>
-                </HoverCard>
-                <span> </span>(supervised by Prof. Annie Lee) and the social reading technology group (supervised by Prof. Gerald Penn). I'm also a teaching assistant for CSC111.
-                </span>
-              </div>
-              <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
-                <span className='font-bold whitespace-nowrap'>my research interests:</span>
-                <span>multilinguality in natural language processing, LLM biases, human-AI interaction.</span>
-              </div>
-              <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
-                <span className='font-bold whitespace-nowrap'>outside of school:</span>
-                <span>
-                I'm the vice president at <Link href='https://www.utasx.ca' className='underline font-bold text-primary'>uoft's astronomy club</Link>. I help out with the computer science student union & I mentor at its research mentorship program. I like cooking/baking, <HoverCard>
-                  <HoverCardTrigger>
-                  <span> </span><span className='bg-secondary p-1 rounded'>specialty coffee</span>
-                  </HoverCardTrigger>
-                  <HoverCardContent className='bg-secondary border border-primary'>
-                  <span>i'm a volunteer barista at cafe059 - the architecture building cafe!</span>
-                  </HoverCardContent>
-                </HoverCard>, board games and
-                <HoverCard>
-                  <HoverCardTrigger>
-                  <span> </span><span className='bg-secondary p-1 rounded'>classical music.</span>
-                  </HoverCardTrigger>
-                  <HoverCardContent className='bg-secondary border border-primary'>
-                  <span>chopin is the 🐐.</span>
-                  </HoverCardContent>
-                </HoverCard>
-                </span>
-              </div>
-              <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
+                <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
+                  <span className='font-bold whitespace-nowrap'>what I do:</span>
+                  <span>
+                    I'm a first-year computer science masters' student at McGill University and a researcher at <Link href="https://mila.quebec/en" target="_blank" className='underline font-bold text-primary'>Mila - Quebec AI Institute</Link>, supervised by Prof. Jackie Cheung. I did my undergrad at the University of Toronto, where I'm working at the
+                    <HoverCard>
+                      <HoverCardTrigger>
+                        <span> <span className='bg-secondary p-1 rounded'>Lee Language Lab</span></span>
+                      </HoverCardTrigger>
+                      <HoverCardContent className='bg-secondary border border-primary'>
+                        <span>we focus on multilingual nlp & cross-lingual transfer with a focus on lesser-resourced languages.</span>
+                      </HoverCardContent>
+                    </HoverCard>
+                    <span> </span>(supervised by Prof. Annie Lee) and the social reading technology group (supervised by Prof. Gerald Penn).
+                  </span>
+                </div>
+                <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
+                  <span className='font-bold whitespace-nowrap'>my research interests:</span>
+                  <div className='flex flex-col gap-1'>
+                    <span>multilinguality in natural language processing, cross-lingual transfer, typology.</span>
+                    <span className='text-lg italic'>
+                      → see my <Link href='/publications' className='underline font-bold text-primary'>publications</Link>
+                    </span>
+                  </div>
+                </div>
+                <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
+                  <span className='font-bold whitespace-nowrap'>outside of school:</span>
+                  <span>
+                    I like cooking/baking, <HoverCard>
+                      <HoverCardTrigger>
+                        <span> </span><span className='bg-secondary p-1 rounded'>specialty coffee</span>
+                      </HoverCardTrigger>
+                      <HoverCardContent className='bg-secondary border border-primary'>
+                        <span>i've recently worked as a barista at multiple cafes.</span>
+                      </HoverCardContent>
+                    </HoverCard>, board games and
+                    <HoverCard>
+                      <HoverCardTrigger>
+                        <span> </span><span className='bg-secondary p-1 rounded'>classical music.</span>
+                      </HoverCardTrigger>
+                      <HoverCardContent className='bg-secondary border border-primary'>
+                        <span>chopin is the 🐐.</span>
+                      </HoverCardContent>
+                    </HoverCard>{" "}
+                    at UofT I served as vice president of <Link href='https://www.utasx.ca' className='underline font-bold text-primary'>uoft's astronomy club</Link> and academic associate of the CSSU.
+                  </span>
+                </div>
+                {/* <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
                 <span>- maybe some of my <Link href='/projects' className='underline font-bold text-primary'>projects</Link> will interest you?</span>
-              </div>
+              </div> */}
               </div>
 
             </div>
@@ -180,11 +199,18 @@ export default function Home() {
                   <FiLinkedin size={20} />
                   LinkedIn
                 </Link>
-                <Link href='mailto:york.ng@mail.utoronto.ca' className='underline flex items-center gap-1' target='_blank' rel='noopener noreferrer'>
+                <span className='flex items-center gap-1'>
                   <FiMail size={20} />
-                  Email
-                </Link>
+                  email: york.ng [at] mila [dot] quebec
+                </span>
               </div>
+            </div>
+          </div>
+          <div className='w-full flex flex-col gap-1 items-center justify-center'>
+            <span className="font-bold text-lg">quote of the month</span>
+            <div className='flex flex-col gap-1 bg-secondary p-6 items-end'>
+              <span className="text-lg">"oh, well I never! was there ever a cat so clever as magical Mr. Mistoffelees?"</span>
+              <span className="text-md text-primary">- T.S. Eliot</span>
             </div>
           </div>
         </div>

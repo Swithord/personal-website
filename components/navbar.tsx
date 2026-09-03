@@ -36,11 +36,11 @@ export default function Navbar() {
           <Link href="/">
             <div className="font-bold">york ng</div>
           </Link>
-          <Link href="/projects"> 
-            <div className="ml-4">projects</div>
-          </Link>
           <Link href='/publications'>
             <div className="ml-4">research</div>
+          </Link>
+          <Link href='/cv'>
+            <div className="ml-4">cv</div>
           </Link>
             <DropdownMenu onOpenChange={(open) => setIsOpen(open)}>
             <DropdownMenuTrigger className="ml-4 flex gap-2 items-center">
@@ -53,7 +53,10 @@ export default function Navbar() {
               <Link href="/cattycomicscompany">comics</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-              <Link href="/gallery">gallery</Link>
+              <Link href="/projects">projects</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+              <Link href="/gallery">photos</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
             </DropdownMenu>

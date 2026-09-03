@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/yorky/website/pages/gallery)"
+    ],
+    "additionalDirectories": [
+      "/Users/yorky/website/pages"
+    ]
+  }
+}
