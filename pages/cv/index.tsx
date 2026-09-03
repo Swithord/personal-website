@@ -162,7 +162,7 @@ export default function CV() {
                             <span className='font-bold'>Cathay Pacific Airways</span>
                             <span>Vision model training; React frontend development; DevOps (AWS and Azure functions).</span>
                         </div>
-                        <div className='flex flex-col items-end'>
+                        <div className='flex flex-col items-end text-right'>
                             <span>Jul - Aug 2025</span>
                         </div>
                     </div>
@@ -171,7 +171,7 @@ export default function CV() {
                             <span className='font-bold'>dRoW</span>
                             <span>Langchain RAG agent development; Angular frontend development.</span>
                         </div>
-                        <div className='flex flex-col items-end'>
+                        <div className='flex flex-col items-end text-right'>
                             <span>May - Jun 2023; May - Jun 2024</span>
                         </div>
                     </div>
@@ -180,7 +180,7 @@ export default function CV() {
                             <span className='font-bold'>Civil Aviation Department of Hong Kong</span>
                             <span>Automation of air traffic analysis. <span className='text-sm text-muted-foreground'>(this was super cool.)</span></span>
                         </div>
-                        <div className='flex flex-col items-end'>
+                        <div className='flex flex-col items-end text-right'>
                             <span>Jul - Aug 2023</span>
                         </div>
                     </div>
@@ -195,7 +195,7 @@ export default function CV() {
                                         <span className='font-bold'>Vice President</span>
                                         <span>Astronomy & Space Exploration Association, University of Toronto</span>
                                     </div>
-                                    <div className='flex flex-col items-end'>
+                                    <div className='flex flex-col items-end text-right'>
                                         <span>May 2025 - May 2026</span>
                                     </div>
                                 </div>
@@ -204,7 +204,7 @@ export default function CV() {
                                         <span className='font-bold'>Academic Associate</span>
                                         <span>Computer Science Students Union, University of Toronto</span>
                                     </div>
-                                    <div className='flex flex-col items-end'>
+                                    <div className='flex flex-col items-end text-right'>
                                         <span>Sep 2025 - May 2026</span>
                                     </div>
                                 </div>
@@ -213,7 +213,7 @@ export default function CV() {
                                         <span className='font-bold'>Mentor, Undergraduate Student Research Program</span>
                                         <span>Computer Science Students Union, University of Toronto</span>
                                     </div>
-                                    <div className='flex flex-col items-end'>
+                                    <div className='flex flex-col items-end text-right'>
                                         <span>Sep 2025 - May 2026</span>
                                     </div>
                                 </div>
@@ -222,7 +222,7 @@ export default function CV() {
                                         <span className='font-bold'>Outreach Director</span>
                                         <span>Astronomy & Space Exploration Association, University of Toronto</span>
                                     </div>
-                                    <div className='flex flex-col items-end'>
+                                    <div className='flex flex-col items-end text-right'>
                                         <span>May 2023 - May 2025</span>
                                     </div>
                                 </div>
@@ -231,7 +231,7 @@ export default function CV() {
                                         <span className='font-bold'>Software Developer</span>
                                         <span>University of Toronto Aerospace Team</span>
                                     </div>
-                                    <div className='flex flex-col items-end'>
+                                    <div className='flex flex-col items-end text-right'>
                                         <span>Sep 2024 - May 2025</span>
                                     </div>
                                 </div>
@@ -240,7 +240,7 @@ export default function CV() {
                                         <span className='font-bold'>Platform Developer</span>
                                         <span>University of Toronto Machine Intelligence Team</span>
                                     </div>
-                                    <div className='flex flex-col items-end'>
+                                    <div className='flex flex-col items-end text-right'>
                                         <span>Sep 2024 - May 2025</span>
                                     </div>
                                 </div>
@@ -249,7 +249,7 @@ export default function CV() {
                                         <span className='font-bold'>Software Developer</span>
                                         <span>UofT Web Dev Club</span>
                                     </div>
-                                    <div className='flex flex-col items-end'>
+                                    <div className='flex flex-col items-end text-right'>
                                         <span>Jan 2023 - May 2024</span>
                                     </div>
                                 </div>
@@ -258,7 +258,7 @@ export default function CV() {
                                         <span className='font-bold'>Communications Admin</span>
                                         <span>Computer Science Students Union, University of Toronto</span>
                                     </div>
-                                    <div className='flex flex-col items-end'>
+                                    <div className='flex flex-col items-end text-right'>
                                         <span>Jan 2023 - May 2024</span>
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@ export default function CV() {
                                         <span className='font-bold'>Software Developer</span>
                                         <span>UofT Blueprint</span>
                                     </div>
-                                    <div className='flex flex-col items-end'>
+                                    <div className='flex flex-col items-end text-right'>
                                         <span>Sep 2023 - May 2024</span>
                                     </div>
                                 </div>
