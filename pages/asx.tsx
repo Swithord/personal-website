@@ -25,16 +25,16 @@ export default function Publications() {
                 <span>so you'd like to contact me. here's my most up-to-date info:</span>
                 <ul className='flex flex-col gap-1'>
                     <li>
-                        <span className='font-bold'>email 1</span>: <a href="mailto:example@email.com">yorkhayng@gmail.com</a>
+                        <span className='font-bold'>email 1</span>: <a href="mailto:example@email.com">yorkhayng [at] gmail [dot] com</a>
                     </li>
                     <li>
-                        <span className='font-bold'>email 2</span>: <a href="mailto:example2@email.com">york.ng@mail.mcgill.ca</a>
+                        <span className='font-bold'>email 2</span>: <a href="mailto:example2@email.com">york.ng [at] mila [dot] quebec</a>
                     </li>
                     <li>
                         <span className='font-bold'>discord</span>: Swithord
                     </li>
                     <li>
-                        <span className='text-sm text-muted-foreground'>last updated june 2, 2026</span>
+                        <span className='text-sm text-muted-foreground'>last updated sep 3, 2026</span>
                     </li>
                 </ul>
                 <span>hope all is well!</span>

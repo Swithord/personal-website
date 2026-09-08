@@ -85,6 +85,7 @@ export default function CattyComicsCompany() {
         <div className='flex flex-col bg-background text-foreground h-screen gap-10 items-center'>
             <Navbar />
             <div className='flex flex-col w-full gap-10 container grow'>
+                <a href="https://yorkng.com/" className='text-primary text-lg hover:underline'>← back to home</a>
                 <div className='flex flex-col gap-1'>
                     <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary flex gap-2'><FaCat />welcome to the catty comics company!</span>
                     <div>
