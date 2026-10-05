@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { useEffect } from "react";
 
-const REDIRECT_TARGET = "https://aclanthology.org/2026.eacl-srw.8.pdf";
+const REDIRECT_TARGET = "https://arxiv.org/pdf/2609.03775";
 
-export default function EaclRedirectPage() {
+export default function EmnlpRedirectPage() {
   useEffect(() => {
     const timer = window.setTimeout(() => {
       window.location.replace(REDIRECT_TARGET);
