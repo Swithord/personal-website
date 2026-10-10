@@ -20,6 +20,10 @@ export default function Projects() {
     <div className='flex flex-col bg-background text-foreground h-screen gap-10 items-center'>
         <Navbar />
         <div className='flex flex-col w-full gap-10 container grow'>
+            <div className='flex flex-col w-full border-[3px] border-dotted border-primary px-6 py-4'>
+                <span className='text-lg'>hi! this page is no longer being maintained.</span>
+                <span>might i direct you to my <Link href="/publications" className='text-primary underline'>research</Link>?</span>
+            </div>
             <div className='flex flex-col gap-1'>
                 <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>featured projects</span>
                 <div className='flex gap-2 flex-wrap text-lg items-center'>

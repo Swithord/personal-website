@@ -143,7 +143,7 @@ export default function Publications() {
                     </ul>
                 </div>
                 <div className='flex flex-col gap-1'>
-                    <span>I also care deeply about the responsible use of AI.</span>
+                    <span>I also care deeply about the ethical use and development of AI.</span>
                     <div className='flex flex-col gap-1 bg-secondary p-6 w-fit'>
                         <div className='flex flex-row gap-3'>
                             <span className='text-3xl font-bold'>"</span>

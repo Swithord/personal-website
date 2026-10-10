@@ -106,25 +106,9 @@ export default function Home() {
           />
         </div>
         <div className='container flex flex-col gap-10'>
-          <div className='flex flex-col gap-1 relative'>
-            <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>about me</span>
-            <div className='relative'>
-              <Image
-                src="/profile.JPG"
-                alt="Profile picture"
-                width={150}
-                height={150}
-                className="rounded-full border-4 border-secondary shadow-lg object-cover float-right ml-4 mb-2 w-24 h-24 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px] dark:hidden"
-                priority
-              />
-              <Image
-                src="/profile-dark.png"
-                alt="Profile picture"
-                width={150}
-                height={150}
-                className="rounded-full border-4 border-secondary shadow-lg object-cover float-right ml-4 mb-2 w-24 h-24 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px] hidden dark:block"
-                priority
-              />
+          <div className='flex flex-col sm:flex-row gap-8'>
+            <div className='flex flex-col gap-1 relative order-1 sm:order-0 w-full'>
+              <span className='text-3xl text-primary font-bold underline underline-offset-4 decoration-secondary'>about me</span>
               <div className='flex flex-col gap-3'>
                 <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
                   <span className='font-bold whitespace-nowrap'>what I do:</span>
@@ -145,7 +129,7 @@ export default function Home() {
                   <span className='font-bold whitespace-nowrap'>my research interests:</span>
                   <div className='flex flex-col gap-1'>
                     <span>multilinguality in natural language processing, cross-lingual transfer, typology.</span>
-                    <span className='text-lg italic'>
+                    <span className='text-base'>
                       → see my <Link href='/publications' className='underline font-bold text-primary'>publications</Link>
                     </span>
                   </div>
@@ -153,14 +137,24 @@ export default function Home() {
                 <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
                   <span className='font-bold whitespace-nowrap'>outside of school:</span>
                   <span>
-                    I like cooking/baking, <HoverCard>
+                    I like cooking/baking,
+                    <HoverCard>
                       <HoverCardTrigger>
                         <span> </span><span className='bg-secondary p-1 rounded'>specialty coffee</span>
                       </HoverCardTrigger>
                       <HoverCardContent className='bg-secondary border border-primary'>
                         <span>i've recently worked as a barista at multiple cafes.</span>
                       </HoverCardContent>
-                    </HoverCard>, board games and
+                    </HoverCard>
+                    , board games,
+                    <HoverCard>
+                      <HoverCardTrigger>
+                        <span> </span><span className='bg-secondary p-1 rounded'>observational astronomy</span>
+                      </HoverCardTrigger>
+                      <HoverCardContent className='bg-secondary border border-primary'>
+                        <span>at UofT I served as vice president of <Link href='https://www.utasx.ca' className='underline font-bold text-primary'>uoft's astronomy club</Link>.</span>
+                      </HoverCardContent>
+                    </HoverCard> and
                     <HoverCard>
                       <HoverCardTrigger>
                         <span> </span><span className='bg-secondary p-1 rounded'>classical music.</span>
@@ -169,14 +163,32 @@ export default function Home() {
                         <span>chopin is the 🐐.</span>
                       </HoverCardContent>
                     </HoverCard>{" "}
-                    at UofT I served as vice president of <Link href='https://www.utasx.ca' className='underline font-bold text-primary'>uoft's astronomy club</Link> and academic associate of the CSSU.
+                    {/* at UofT I served as vice president of <Link href='https://www.utasx.ca' className='underline font-bold text-primary'>uoft's astronomy club</Link> and academic associate of the CSSU. */}
                   </span>
                 </div>
                 {/* <div className='flex gap-1 flex-wrap md:flex-nowrap text-lg'>
                 <span>- maybe some of my <Link href='/projects' className='underline font-bold text-primary'>projects</Link> will interest you?</span>
               </div> */}
               </div>
-
+            </div>
+            <div className='flex flex-col items-center order-0 sm:order-1 w-fit gap-1'>
+              <Image
+                src="/profile.JPG"
+                alt="Profile picture"
+                width={200}
+                height={200}
+                className="object-cover float-right w-32 h-32 sm:w-48 sm:h-48 md:w-[200px] md:h-[200px] dark:hidden"
+                priority
+              />
+              <Image
+                src="/profile-dark.png"
+                alt="Profile picture"
+                width={200}
+                height={200}
+                className="object-cover float-right w-32 h-32 sm:w-48 sm:h-48 md:w-[200px] md:h-[200px] hidden dark:block order-0 sm:order-1"
+                priority
+              />
+              <span className='dark:hidden'>me at my barista job.</span>
             </div>
           </div>
           <div className='flex flex-col gap-5'>
@@ -201,14 +213,14 @@ export default function Home() {
                 </Link>
                 <span className='flex items-center gap-1'>
                   <FiMail size={20} />
-                  email: york.ng [at] mila [dot] quebec
+                  email: york [dot] ng [at] mila [dot] quebec
                 </span>
               </div>
             </div>
           </div>
           <div className='w-full flex flex-col gap-1 items-center justify-center'>
-            <span className="font-bold text-lg">quote of the month</span>
-            <div className='flex flex-col gap-1 bg-secondary p-6 items-end'>
+            <span className="font-bold text-lg">quote of the month (oct'26)</span>
+            <div className='flex flex-col gap-1 bg-secondary px-10 py-6 items-end'>
               <span className="text-lg">"despite everything, it's still you."</span>
               <span className="text-md text-primary">- undertale</span>
             </div>
