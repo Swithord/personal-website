@@ -209,8 +209,8 @@ export default function Home() {
           <div className='w-full flex flex-col gap-1 items-center justify-center'>
             <span className="font-bold text-lg">quote of the month</span>
             <div className='flex flex-col gap-1 bg-secondary p-6 items-end'>
-              <span className="text-lg">"oh, well I never! was there ever a cat so clever as magical Mr. Mistoffelees?"</span>
-              <span className="text-md text-primary">- T.S. Eliot</span>
+              <span className="text-lg">"despite everything, it's still you."</span>
+              <span className="text-md text-primary">- undertale</span>
             </div>
           </div>
         </div>
