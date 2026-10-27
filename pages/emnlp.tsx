@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 
-const REDIRECT_TARGET = "https://arxiv.org/pdf/2609.03775";
+const REDIRECT_TARGET = "https://aclanthology.org/2026.emnlp-main.1740/";
 
 export default function EmnlpRedirectPage() {
   useEffect(() => {
