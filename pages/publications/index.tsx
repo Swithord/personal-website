@@ -28,14 +28,30 @@ export default function Publications() {
                             <div className='flex flex-col'>
                                 <span className='font-bold'>Language Distances are Practical for Equitable Cross-Lingual Transfer</span>
                                 <span className='text-base'><span className='font-bold'>York Ng*</span>, Razan Rifandi*, Aditya Khan*, En-Shiun Annie Lee</span>
-                                <span className='text-muted-foreground text-base'>To appear in MRL @ EMNLP 2026.</span>
+                                <span className='text-muted-foreground text-base'>MRL @ EMNLP 2026</span>
+                            </div>
+                            <div className='flex gap-2'>
+                                <Link href="https://aclanthology.org/2026.mrl-1.46.pdf/" target="_blank">
+                                    <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
+                                        <IoDocumentTextOutline />
+                                        <span className='text-lg'>ACL Anthology</span>
+                                    </Button>
+                                </Link>
                             </div>
                         </li>
                         <li className='flex flex-col gap-1 md:flex-row justify-between w-full md:gap-5'>
                             <div className='flex flex-col'>
                                 <span className='font-bold'>Typological Feature Prediction with Large Language Models: An In-Context Learning Approach</span>
                                 <span className='text-base'>Qianwen Wang*, <span className='font-bold'>York Ng*</span>, Aditya Khan, En-Shiun Annie Lee</span>
-                                <span className='text-muted-foreground text-base'>To appear in EMNLP 2026.</span>
+                                <span className='text-muted-foreground text-base'>EMNLP 2026</span>
+                            </div>
+                            <div className='flex gap-2'>
+                                <Link href="https://aclanthology.org/2026.emnlp-main.1740/" target="_blank">
+                                    <Button variant="outline" size="sm" className='flex items-center gap-2 bg-secondary'>
+                                        <IoDocumentTextOutline />
+                                        <span className='text-lg'>ACL Anthology</span>
+                                    </Button>
+                                </Link>
                             </div>
                         </li>
                         <li className='flex flex-col gap-1 md:flex-row justify-between w-full md:gap-5'>
@@ -87,7 +103,7 @@ export default function Publications() {
                             <div className='flex flex-col'>
                                 <span className='font-bold'>Modality Matching Matters: Calibrating Language Distances for Cross-Lingual Transfer in URIEL+</span>
                                 <span className='text-base'><span className='font-bold'>York Ng*</span>, Aditya Khan*, James Lu*, Matteo Salloum, Michael Zhou, Fiona Hoang, A. Seza Doğruöz, En-Shiun Annie Lee</span>
-                                <span className='text-muted-foreground text-base'>SRW @ EACL 2026 (Oral & Poster) and SIGTYP (Oral, non-archival). Outstanding Paper.</span>
+                                <span className='text-muted-foreground text-base'>SRW @ EACL 2026 (Spotlight) and SIGTYP (Oral, non-archival)</span>
                             </div>
                             <div className='flex gap-2'>
                                 <Link href="https://aclanthology.org/2026.eacl-srw.8" target="_blank">
@@ -102,7 +118,7 @@ export default function Publications() {
                             <div className='flex flex-col'>
                                 <span className='font-bold'>Less is More: The Effectiveness of Compact Typological Language Representations</span>
                                 <span className='text-base'><span className='font-bold'>York Ng</span>, Fiona Hoang, En-Shiun Annie Lee</span>
-                                <span className='text-muted-foreground text-base'>EMNLP 2025 (Poster)</span>
+                                <span className='text-muted-foreground text-base'>EMNLP 2025</span>
                             </div>
                             <div className='flex gap-2'>
                                 <Link href="https://aclanthology.org/2025.emnlp-main.1310/" target="_blank">
