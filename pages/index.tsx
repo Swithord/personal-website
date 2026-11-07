@@ -223,7 +223,7 @@ export default function Home() {
             <div className='flex flex-col gap-1 bg-secondary px-10 py-6 items-end'>
               <span className="text-lg self-start">"[you] musn't be accustomed. it's only because we all became accustomed to everything, that you all ended up like this."</span>
               <span className="text-md self-start">(orig. 千祈唔好慣。就係因為我哋乜嘢都慣晒，先搞到你哋咁。)</span>
-              <span className="text-md text-primary">- Kai-chi Liu in <span className='italic'>Ten Years (2015)</span>, on propaganda.</span>
+              <span className="text-md text-primary">- the late Kai-chi Liu in <span className='italic'>Ten Years (2015)</span>, on propaganda.</span>
             </div>
           </div>
         </div>
